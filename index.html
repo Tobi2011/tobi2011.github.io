@@ -1,44 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Lattitude Weather</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+<body class = "bg-secondary">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light pl-5">
+    <a class="navbar-brand bg-info text-white px-2" href="#">Latitude</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Temperature</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+        </li>
+      </ul>
+  </nav>
+<!-- Summmary container -->
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-10 offset-1 bg-white">
+        <h1>Summary: Latitude vs. X</h1>
+        <hr class="my-4">
+        <img src= "https://github.com/UCF-Coding-Boot-Camp/UCFLM201901DATA2/blob/master/11-Web/Homework/Instructions/Resources/assets/images/Fig1.png?raw=true" alt="Max Temp Versus Latitude">
 
-<body>
-  <h1> Tobi A</h1>
-  <img src= "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt = "Python Master lol/jk"  />
-  <br>
-  <p>I am a wanna be software engineer that wants to be a master in Python</p>
-  <br>
-  <p>This should be a second paragraph</p>
-  <ul>
-    <li><a href = "" target= "_blank">Linked In</a></li>
-    <li> <a href = "" target= "_blank">GitHub</a></li>
-  </ul>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanation and descriptions of any rends and correlations witnessed.</p>
+      </div>
+        <!-- Visualizations -->
+      <div class="col-lg-2 col-md-2 col-sm-10 offset-1 bg-white">
+        <h2>Visualizations</h2>
+        <hr class="my-4">
+        <ul vertical-align:top></ul>
+        <img src= "https://github.com/UCF-Coding-Boot-Camp/UCFLM201901DATA2/blob/master/11-Web/Homework/Instructions/Resources/assets/images/Fig1.png?raw=true" alt="City Latitude vs Max Temperature">
 
-  <table border = "4">
-    <thead>
-      <tr>
-        <th colspan="4">Favorite Things</th>
-      </tr>
-      <tr>
-        <th>Song</th>
-        <th>Movie</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Green Light</td>
-        <td>Bicycle</td>
-      </tr>
-      <tr>
-        <td>Spirited Away</td>
-        <td>Star Wars</td>
-      </tr>
-    </tbody>
-  </table>
-  </table>
+        <img src= "https://github.com/UCF-Coding-Boot-Camp/UCFLM201901DATA2/blob/master/11-Web/Homework/Instructions/Resources/assets/images/Fig2.png?raw=true" alt="City Latitude versus. Humidity">
+
+        <img src= "https://github.com/UCF-Coding-Boot-Camp/UCFLM201901DATA2/blob/master/11-Web/Homework/Instructions/Resources/assets/images/Fig3.png?raw=true" alt="City Latitude versus. Cloudiness">
+
+        <img src= "https://github.com/UCF-Coding-Boot-Camp/UCFLM201901DATA2/blob/master/11-Web/Homework/Instructions/Resources/assets/images/Fig4.png?raw=true" alt="Max Temp Versus Wind Speed">
+      </div>
+      <div class="col-lg-1 col-md-1">
+         
+      </div>
+    </div>
+  </div>
+  
+<!-- Bottom of Website Bar -->
+  <div class="container col-md-12 col-sm-12 bg-info text-center py-3" >
+    <a class = "">@ Copyright Coding Bootcamp 2017</a>
+  </div>
 </body>
-
-</html>

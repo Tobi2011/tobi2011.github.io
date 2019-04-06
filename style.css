@@ -1,0 +1,16 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-size: 2.5vw;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 2vw;
+}
+

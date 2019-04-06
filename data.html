@@ -3,27 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Lattitude Weather</title>
+  <title>Latitude Weather</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body class = "bg-secondary" >
   <!-- Navbar -->
-  <a>Latitude</a>
-  <a>Plots</a>
-  <a href = '#'>Comparison</a>
-  <a href = '#'>Data</a>
-
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light pl-5">
+    <a class="navbar-brand bg-info text-white px-2" href="index.html">Latitude</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="max_temperature.html">Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+  </nav>
 <!-- Data container -->
+<div class="col-lg-10 col-md-10 col-sm-10 offset-1 bg-white py-5 px-4">
   <h1>Data</h1>
 
   <p>The following table includes all of the data used for plotting during this project.</p>
   
   <!-- Data -->
 
-  <table class="table table-bordered table-hover table-condensed">
+  <table class="table table-bordered table-hover table-condensed thead-light table-striped table-responsive">
       <thead><tr><th title="Field #1">City_ID</th>
       <th title="Field #2">City</th>
       <th title="Field #3">Cloudiness</th>
@@ -6600,8 +6622,11 @@
       <td align="right">2.62</td>
       </tr>
       </tbody></table>
-  
+  </div>
 <!-- Bottom of Website Bar -->
-    <a>@ Copyright Coding Bootcamp 2017</a>
+<div class="container col-md-12 col-sm-12 bg-info text-center py-3" >
+    <a class = "">@ Copyright Coding Bootcamp 2017</a>
+  </div>
+</body>
 
 </body>
